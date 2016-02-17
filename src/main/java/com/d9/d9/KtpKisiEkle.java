@@ -129,14 +129,14 @@ public class KtpKisiEkle extends javax.swing.JDialog {
 
     private void btnEkleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEkleActionPerformed
       
-        Kisiler ki = new Kisiler();
+        Kisiler k = new Kisiler();
         
-        ki.setAd(txtAd.getText());
-        ki.setSoyad(txtSoyad.getText());
-        ki.setYas(txtYas.getText());
-        ki.setDogumYeri(txtDogumYeri.getText());
-        ki.setAdres(txtAdres.getText());
-        KtpKisiListele.kisiler.add(ki);
+        k.setAd(txtAd.getText());
+        k.setSoyad(txtSoyad.getText());
+        k.setYas(txtYas.getText());
+        k.setDogumYeri(txtDogumYeri.getText());
+        k.setAdres(txtAdres.getText());
+        KtpKisiListele.kisiler.add(k);
         
         this.dispose();
         

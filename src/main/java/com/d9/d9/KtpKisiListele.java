@@ -4,15 +4,14 @@
  */
 package com.d9.d9;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author vektorel
- */
-public class KtpKisiListele extends javax.swing.JDialog {
+
+
+public final class KtpKisiListele extends javax.swing.JDialog {
     
     
  public static List<Kisiler> kisiler = new ArrayList<Kisiler>();
@@ -24,8 +23,12 @@ public class KtpKisiListele extends javax.swing.JDialog {
         Liste();
     }
    
-    
-    public void Liste(){
+ 
+
+   
+         
+         
+  public void Liste(){
        
             String [] baslik = new String []{"Ad","Soyad","Yaş","Doğum Yeri","Adres"}; 
             String [][] bilgiler = new String [kisiler.size()][5];
@@ -41,12 +44,16 @@ public class KtpKisiListele extends javax.swing.JDialog {
                 
                 
             }
-                    
-   
-           
+     
     }
     
+      public static void WriteExcel() throws IOException {
     
+
+    
+    
+      }
+  
     
     public void silme(){
          int selectedRow = tblKisi.getSelectedRow();

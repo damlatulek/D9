@@ -4,16 +4,19 @@
  */
 package com.d9.d9;
 
+import java.util.List;
+
 /**
  *
  * @author vektorel
  */
 public class KtpAnaSayfa extends javax.swing.JFrame {
-
-    /**
-     * Creates new form KtpAnaSayfa
-     */
+    public static final  String FILE_PATH= "C:\\Users\\pc\\Desktop\\kisiler.txt";
+    
+    
     public KtpAnaSayfa() {
+        DosyaYaz dosyayaz=new DosyaYaz();
+        List<Kisiler> Kisiler = dosyayaz.dosyadanOku(FILE_PATH);
         initComponents();
         KtpKisiListele kisilistele = new KtpKisiListele(this, true);
         kisilistele.Liste();

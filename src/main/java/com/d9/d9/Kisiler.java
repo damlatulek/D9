@@ -1,14 +1,20 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.d9.d9;
 
-/**
- *
- * @author vektorel
- */
+
 public class Kisiler {
+
+    Kisiler(String Ad, String Soyad, String Yas, String DogumYeri, String Adres) {
+        
+    }
+
+    Kisiler() {
+        
+    }
+
+   
+   
+    
 
     public String getAd() {
         return Ad;
